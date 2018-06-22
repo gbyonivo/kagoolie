@@ -1,3 +1,6 @@
 import { combineReducers } from 'redux';
+import beersReducer from './beers';
 
-export default () => combineReducers({});
+export default () => combineReducers({
+  beersReducer
+});
