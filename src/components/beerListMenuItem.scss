@@ -1,0 +1,11 @@
+.beerListMenuItem{
+  overflow: hidden;
+  background: red;
+  margin-bottom: 5px;
+  &.isExpanded{
+    height: auto;
+  }
+  &.isCollapsed{
+    height: 60px;;
+  }
+}

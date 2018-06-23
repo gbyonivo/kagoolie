@@ -4,7 +4,8 @@ import { createStore, applyMiddleware, compose } from 'redux';
 import createSagaMiddleware from 'redux-saga';
 import { Provider } from 'react-redux';
 import { BrowserRouter, Route } from 'react-router-dom';
-import Component from './components';
+import BeerListMenu from './components/beersListMenu';
+import BeerGridMenu from './components/beerGridMenu';
 import reducer from './reducers';
 import rootSaga from './sagas';
 import './index.scss';
@@ -23,7 +24,8 @@ sagaMiddleware.run(rootSaga);
 ReactDOM.render(<Provider store={store}>
   <BrowserRouter>
     <div>
-      <Route path="/" component={Component} />
+      <Route path="/" component={BeerListMenu} />
+      <Route path="/" component={BeerGridMenu} />
     </div>
   </BrowserRouter>
 </Provider>, document.getElementById('index')); //eslint-disable-line

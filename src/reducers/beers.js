@@ -1,9 +1,11 @@
-import { FETCH_BEERS, FINISHED_FETCHING_BEERS, ERROR_FETCHING_BEERS } from '../constants/actionTypes';
+import { FETCH_BEERS, FINISHED_FETCHING_BEERS, ERROR_FETCHING_BEERS, SET_FILTER } from '../constants/actionTypes';
+import { LOW_TO_HIGH } from '../constants/gridFilter';
 
 const initialState = {
   beers: [],
   errors: [],
-  isFetchingBeers: true
+  isFetchingBeers: true,
+  gridFilter: LOW_TO_HIGH
 };
 
 const ACTION_HANDLERS = {
@@ -20,7 +22,11 @@ const ACTION_HANDLERS = {
     ...state,
     errors: [...state.errors, error],
     isFetchingBeers: false
-  })
+  }),
+  [SET_FILTER]: (state, { gridFilter }) => ({
+    ...state,
+    gridFilter
+  }),
 };
 
 export default (state = initialState, { payload, type }) => {
