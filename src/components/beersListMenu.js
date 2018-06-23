@@ -3,6 +3,7 @@ import { connect } from 'react-redux';
 import PropTypes from 'prop-types';
 import { selectBeers } from '../selectors';
 import BeerListMenuItem from './beersListMenuItem';
+import styles from './beersListMenu.scss';
 
 class BeerListMenu extends Component {
   constructor(props) {
@@ -20,8 +21,8 @@ class BeerListMenu extends Component {
   render() {
     const { beers } = this.props;
     const { expandedBeerId } = this.state;
-    return (<div>
-      <h2>List of Beers</h2>
+    return (<div className={styles.beersListMenu}>
+      <h2>BEERS</h2>
       <ul>
         {beers.map(beer => <BeerListMenuItem
           beer={beer}

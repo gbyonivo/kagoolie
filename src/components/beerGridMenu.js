@@ -6,19 +6,21 @@ import { selectBeersForGrid, selectGridFilterValue } from '../selectors';
 import * as actions from '../actions';
 import SelectInput from './commons/selectInput';
 import * as gridFilterValues from '../constants/gridFilter';
+import BeerGridMenuItem from './beerGridMenuItem';
+import styles from './beerGridMenu.scss';
 
-const BeerGridMenu = ({ beers, setFilter, filterValue }) => <div>
+const BeerGridMenu = ({ beers, setFilter, filterValue }) => <div className={styles.beerGridMenu}>
   <SelectInput
     onChange={setFilter}
-    label="abv"
+    label="Alcohol Volume"
     value={filterValue}
     options={Object.keys(gridFilterValues).map(key => ({ value: key, text: key }))}
     name="gridFilter" />
-  {
-    beers.map(beer => <div key={beer.id}>
-      {beer.name} {beer.abv}
-    </div>)
-  }
+  <div className={styles.beerGridMenuItems}>
+    {
+      beers.map(beer => <BeerGridMenuItem key={beer.id} beer={beer} />)
+    }
+  </div>
 </div>;
 
 BeerGridMenu.propTypes = {

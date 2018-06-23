@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import Ingredients from './ingredients';
-import styles from './beerListMenuItem.scss';
+import styles from './beersListMenuItem.scss';
 
 const BeerListMenuItem = ({
   beer, setExpandedBeerId, isExpanded
@@ -9,9 +9,9 @@ const BeerListMenuItem = ({
   <li className={`${styles.beerListMenuItem} ${isExpanded ? styles.isExpanded : styles.isCollapsed}`}>
     <h4 onClick={() => setExpandedBeerId(beer.id)}>{beer.name}</h4>
     <div>
-      {beer.tagline}
-      {beer.description}
-      {beer.first_brewed}
+      <div className={styles.tagline}><em>Tagline: </em><span>{beer.tagline}</span></div>
+      <div className={styles.date}><em>First Brewed: </em><span>{beer.first_brewed}</span></div>
+      <div className={styles.description}>{beer.description}</div>
       <Ingredients ingredients={beer.ingredients} />
     </div>
   </li>;

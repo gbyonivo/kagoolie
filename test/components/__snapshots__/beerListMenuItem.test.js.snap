@@ -1,0 +1,161 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`BeerListMenuItem component renders correctly 1`] = `
+<li
+  className="beerListMenuItem isExpanded"
+>
+  <h4
+    onClick={[Function]}
+  >
+    pluto
+  </h4>
+  <div>
+    <div
+      className="tagline"
+    >
+      <em>
+        Tagline: 
+      </em>
+      <span />
+    </div>
+    <div
+      className="date"
+    >
+      <em>
+        First Brewed: 
+      </em>
+      <span />
+    </div>
+    <div
+      className="description"
+    >
+      description
+    </div>
+    <div
+      className="ingredientsWrapper"
+    >
+      <h6>
+        <em>
+          Ingredients
+        </em>
+      </h6>
+      <div
+        className="ingredients"
+      >
+        <div
+          className="ingredient"
+        >
+          malt
+        </div>
+        <div
+          className="ingredientDetails"
+        >
+          <span>
+            malter
+            <span
+              className="ingredientAmount"
+            >
+               undefined
+              undefined, 
+            </span>
+          </span>
+        </div>
+      </div>
+      <div
+        className="ingredients"
+      >
+        <div
+          className="ingredient"
+        >
+          yeast
+        </div>
+        <div
+          className="ingredientDetails"
+        >
+          salah
+        </div>
+      </div>
+    </div>
+  </div>
+</li>
+`;
+
+exports[`BeerListMenuItem component renders correctly 2`] = `
+<li
+  className="beerListMenuItem isCollapsed"
+>
+  <h4
+    onClick={[Function]}
+  >
+    jupiter
+  </h4>
+  <div>
+    <div
+      className="tagline"
+    >
+      <em>
+        Tagline: 
+      </em>
+      <span />
+    </div>
+    <div
+      className="date"
+    >
+      <em>
+        First Brewed: 
+      </em>
+      <span />
+    </div>
+    <div
+      className="description"
+    >
+      descriptive
+    </div>
+    <div
+      className="ingredientsWrapper"
+    >
+      <h6>
+        <em>
+          Ingredients
+        </em>
+      </h6>
+      <div
+        className="ingredients"
+      >
+        <div
+          className="ingredient"
+        >
+          malt
+        </div>
+        <div
+          className="ingredientDetails"
+        >
+          <span>
+            malting
+            <span
+              className="ingredientAmount"
+            >
+               undefined
+              undefined, 
+            </span>
+          </span>
+        </div>
+      </div>
+      <div
+        className="ingredients"
+      >
+        <div
+          className="ingredient"
+        >
+          yeast
+        </div>
+        <div
+          className="ingredientDetails"
+        >
+          firmino
+        </div>
+      </div>
+    </div>
+  </div>
+</li>
+`;

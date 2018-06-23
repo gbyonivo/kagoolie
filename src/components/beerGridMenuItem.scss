@@ -1,0 +1,37 @@
+.beerGridMenuItem{
+  width: 23%;
+  position: relative;
+  background-image: radial-gradient(#fff, #e1e1e1);
+  margin: 1%;
+  float: left;
+  height: 300px;
+  .image{
+    img{
+      height: 250px;
+      width: 100px;
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+      margin-top: 10px;
+    }
+  }
+  .name{
+    text-align: center;
+    margin-top: 5px;
+    font-size: 12px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .beerGridMenuItem{
+    width: 46%;
+    margin: 2%;
+  }
+}
+
+@media screen and (max-width: 389px) {
+  .beerGridMenuItem{
+    width: 98%;
+    margin: 1%;
+  }
+}

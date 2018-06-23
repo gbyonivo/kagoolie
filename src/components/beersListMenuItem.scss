@@ -1,0 +1,36 @@
+.beerListMenuItem{
+  overflow: hidden;
+  background: #e9e9e9;
+  margin-bottom: 5px;
+  transition: max-height ease 1s;
+  h4{
+    font-size: 16px;
+    font-weight: lighter;
+    margin: 0;
+    padding: 10px 10px;
+    cursor: pointer;
+  }
+  &.isExpanded{
+    border-right: #000 solid 0.5px;
+    max-height: 1000px;
+    h4{
+      background: #ccc;
+    }
+  }
+  &.isCollapsed{
+    max-height: 40px;;
+    h4{
+      border-right: #000 solid 0.5px;
+    }
+  }
+  .tagline, .date, .description{
+    font-size: 10px;
+    padding: 5px;
+    display: flex;
+    flex-flow: row;
+    em{
+      font-size: 10px;
+      margin-right: 4px;
+    }
+  }
+}

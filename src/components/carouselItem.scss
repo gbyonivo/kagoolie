@@ -1,0 +1,33 @@
+.carouselItem{
+  background-image: linear-gradient(#fff, #fbfbfb);
+  height: 500px;
+  display: flex;
+  .image{
+    width: 50%;
+    img{
+      height: 400px;
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+    }
+  }
+  .description{
+    width: 50%;
+    font-style: italic;
+  }
+  .image, .description{
+    flex-direction: row;
+  }
+}
+
+@media screen and (max-width: 389px) {
+  .carouselItem{
+    background-image: none;
+    .description{
+      display: none;
+    }
+    .image{
+      width: 100%;
+    }
+  } 
+}

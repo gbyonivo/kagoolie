@@ -1,0 +1,21 @@
+.ingredientsWrapper{
+  h6{
+    margin: 3px;
+    padding: 0;
+    text-align: center;
+  }
+  .ingredients{
+    font-size: 12px;
+    display: flex;
+    margin-bottom: 5px;
+    .ingredient{
+      padding: 5px;
+    }
+    .ingredientDetails{
+      padding: 5px;
+      .ingredientAmount{
+        font-size: 10px;
+      }
+    }
+  }
+}

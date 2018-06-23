@@ -1,0 +1,21 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`BeerGridMenuItem component renders correctly 1`] = `
+<div
+  className="beerGridMenuItem"
+>
+  <div
+    className="image"
+  >
+    <img
+      alt=""
+      src="sdsds"
+    />
+  </div>
+  <div
+    className="name"
+  >
+    pluto
+  </div>
+</div>
+`;

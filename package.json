@@ -40,8 +40,11 @@
     "eslint-plugin-import": "^2.12.0",
     "eslint-plugin-jsx-a11y": "^6.0.3",
     "eslint-plugin-react": "^7.9.1",
+    "file-loader": "^1.1.11",
+    "gifsicle": "^3.0.4",
     "html-webpack-plugin": "^3.2.0",
     "identity-obj-proxy": "^3.0.0",
+    "image-webpack-loader": "^4.3.1",
     "jest": "^23.1.0",
     "json-loader": "^0.5.7",
     "node-sass": "^4.9.0",
@@ -62,8 +65,10 @@
     "react-dom": "^16.4.0",
     "react-redux": "^5.0.7",
     "react-router-dom": "^4.3.1",
+    "react-slick": "^0.23.1",
     "redux": "^4.0.0",
-    "redux-saga": "^0.16.0"
+    "redux-saga": "^0.16.0",
+    "slick-carousel": "^1.8.1"
   },
   "jest": {
     "bail": true,
@@ -91,6 +96,9 @@
         "lines": 80
       }
     },
+    "setupFiles": [
+      "<rootDir>/src/setupTests.js"
+    ],
     "verbose": false,
     "snapshotSerializers": [
       "enzyme-to-json/serializer"

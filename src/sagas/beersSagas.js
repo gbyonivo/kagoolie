@@ -12,7 +12,7 @@ export function* fetchBeersSaga() {
     const data = yield call(fetchBeersFromApi);
     yield put(finishedFetchingBeers(data));
   } catch (error) {
-    yield put(errorFetchingBeers('error loading beers'));
+    yield put(errorFetchingBeers('error fetching beers'));
   }
 }
 

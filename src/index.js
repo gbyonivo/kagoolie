@@ -6,6 +6,7 @@ import { Provider } from 'react-redux';
 import { BrowserRouter, Route } from 'react-router-dom';
 import BeerListMenu from './components/beersListMenu';
 import BeerGridMenu from './components/beerGridMenu';
+import Carousel from './components/firstCarousel';
 import reducer from './reducers';
 import rootSaga from './sagas';
 import './index.scss';
@@ -25,6 +26,7 @@ ReactDOM.render(<Provider store={store}>
   <BrowserRouter>
     <div>
       <Route path="/" component={BeerListMenu} />
+      <Route path="/" component={Carousel} />
       <Route path="/" component={BeerGridMenu} />
     </div>
   </BrowserRouter>
