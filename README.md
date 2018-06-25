@@ -1,6 +1,6 @@
 # Kagoolie - REACT
 
-Kagoolie is simple application that reads beers from an api and displays the list in an accordion list, carousel and grid.
+Kagoolie is a simple application that reads beers from an api and displays the list in an accordion list, carousel and grid.
 
 ## Technologies Used
 React,
