@@ -4,7 +4,7 @@ import { Provider } from 'react-redux';
 import { createStore } from 'redux';
 import reducers from '../__testData__/store';
 import combinedReducer from '../../src/reducers';
-import FirstCarousel from '../../src/components/firstCarousel';
+import FirstCarousel from '../../src/components/carousel';
 
 describe('FirstCarousel component', () => {
   it('renders correctly', () => {

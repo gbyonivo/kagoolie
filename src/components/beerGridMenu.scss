@@ -2,5 +2,26 @@
   width: 100%;
   .beerGridMenuItems{
     width: 100%;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 1em;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .beerGridMenu{
+    width: 100%;
+    .beerGridMenuItems{
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+}
+
+@media screen and (max-width: 389px) {
+  .beerGridMenu{
+    width: 100%;
+    .beerGridMenuItems{
+      grid-template-columns: repeat(1, 1fr);
+    }
   }
 }

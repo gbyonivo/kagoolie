@@ -1,33 +1,27 @@
 .carouselItem{
   background-image: linear-gradient(#fff, #fbfbfb);
   height: 500px;
-  display: flex;
+  display: grid;
+  grid-template-columns: 2fr 1fr;
   .image{
-    width: 50%;
     img{
       height: 400px;
       display: block;
       margin-left: auto;
       margin-right: auto;
+      padding-top: 20px;
     }
   }
   .description{
-    width: 50%;
     font-style: italic;
-  }
-  .image, .description{
-    flex-direction: row;
   }
 }
 
-@media screen and (max-width: 389px) {
+@media screen and (max-width: 786px) {
   .carouselItem{
-    background-image: none;
     .description{
       display: none;
     }
-    .image{
-      width: 100%;
-    }
+    grid-template-columns: 1fr;
   } 
 }

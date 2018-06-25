@@ -22,7 +22,7 @@ class BeerListMenu extends Component {
     const { beers } = this.props;
     const { expandedBeerId } = this.state;
     return (<div className={styles.beersListMenu}>
-      <h2>BEERS</h2>
+      <h2>AVAILABLE BEERS</h2>
       <ul>
         {beers.map(beer => <BeerListMenuItem
           beer={beer}

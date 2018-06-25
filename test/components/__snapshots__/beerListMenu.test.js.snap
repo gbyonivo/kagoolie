@@ -5,7 +5,7 @@ exports[`BeersListMenu component renders correctly 1`] = `
   className="beersListMenu"
 >
   <h2>
-    BEERS
+    AVAILABLE BEERS
   </h2>
   <ul>
     <li
